@@ -1,0 +1,55 @@
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; // Ciemne tło jak w Spotify
+  margin: 0;
+  overflow: hidden;
+}
+
+.content-box {
+  text-align: center;
+}
+
+.gradient-text {
+  font-size: 4rem; // Duży napis
+  font-weight: 900;
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: -2px;
+  
+  /* To robi kolorowy gradient na literach */
+  background: linear-gradient(90deg, #1db954, #1ed760, #80ffaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sub-text {
+  color: #b3b3b3;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.login-btn {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 18px 45px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(29, 185, 84, 0.3);
+
+  &:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(29, 185, 84, 0.4);
+  }
+}
